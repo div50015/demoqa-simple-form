@@ -4,8 +4,10 @@ from time import sleep
 
 def test_registration_simple_form():
     #GIVEN
-    browser.open('https://demoqa.com/text-box')
+    browser.open('https://demoqa.com/elements')
+    browser.element('//*[text() = "Text Box"]').click()
     browser.element('#userName').type('Igor Deg')
+
     pass
 
     # sleep(5)
